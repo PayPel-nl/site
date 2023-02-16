@@ -9,6 +9,16 @@
    <link rel="stylesheet" href="https://github.com/facilismusic/facilismusic.github.io/blob/master/assets/css/main.css">
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	 <script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
    <style>
 	 .float-container {
    
@@ -89,6 +99,8 @@ img {
 
  <div id="section1" class="container-fluid">
 
+	
+	 
      <h1 style="color:darkblue">Stuff I do</h1>
 	     <ul style="color:darkblue"><
              <li><a href="https://www.scoutingtecumseh.nl" target="_blank" rel="noopener noreferrer" style="color:darkblue">
@@ -109,7 +121,40 @@ img {
              <li><a href="" target="_blank" rel="noopener noreferrer" style="color:darkblue">
 	     I also play piano
              </a></li></ul>
-	   
+	    
+<div id="myDIV">
+<table>
+<thead>
+  <tr>
+    <th>Friends</th>
+    <th>girlfriend</th>
+    <th>ex girlfriends</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Thomas</td>
+    <td>Jules<br><br></td>
+    <td>Nore</td>
+  </tr>
+  <tr>
+    <td>Rohan</td>
+    <td>Laura</td>
+    <td>vEra</td>
+  </tr>
+  <tr>
+    <td>AJ</td>
+    <td>Ricky</td>
+    <td>Brecht</td>
+  </tr>
+  <tr>
+    <td>Brecht</td>
+    <td></td>
+    <td></td>
+  </tr>
+</tbody>
+</table>
+</div>
 
 
 
@@ -151,7 +196,7 @@ img {
  <div id="section5" class="container-fluid">
      <p style="color:darkblue">Copyright &copy; <script>document.write(new Date().getFullYear())</script> Pelle Luttikhuizen and Rohan de Graaf All Rights Reserved</p>
      <p style="color:darkblue">Made using Bootstrap.js, Bootstrap.min.cs and jQuery.js</p>
-
+     <input type="text" onkeypress="myFunction()">
  </div>    
 
  </body>
