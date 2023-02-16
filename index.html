@@ -13,21 +13,20 @@
 	  // .fixed-ratio-resize { /* basic responsive img */
 	//max-width: 400px;
 	//height: auto;
-	//max-height: 400px;	   
+//	max-height: 400px;	   
 	//width: auto\5; /* IE8 */
 //}
-	   .fluid-ratio-resize { 
-	max-width: 400px; /* actual img width */
-	*height: 150px; /* actual img height - IE7 */
-	background-image: url(1.jpeg);
-	background-size: cover;
-	background-position: center;
+	   .box {
+  width: 20%;
+  height: 200px;
+  border: 5px dashed #f7a239;
 }
-.fluid-ratio-resize:after {
-	content: " ";
-	display: block; 
-	width: 100%; 
-	padding-top: 4.918%; /* slope */
+
+img {
+  width: 100%; /* takes the 100 % width of its container (.box div)*/
+  height: 100%; /* takes the 100 % height of its container (.box div)*/
+}
+
 	   }
   @media (max-width:629px) {
    img#optionalstuff {
@@ -104,7 +103,7 @@
 
        <h1>Photos</h1>
 
-<div class="fluid-ratio-resize">
+<div class="box">
   <img class="fixed-ratio-resize" src="1.jpeg" alt="Girl in a jacket" ">
 	   <img class="fixed-ratio-resize" src="2.jpeg" alt="Girl in a jacket" ">
 		  <img class="fixed-ratio-resize" src="3.jpeg" alt="Girl in a jacket" ">
