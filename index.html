@@ -10,6 +10,11 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
    <style>
+	   .fixed-ratio-resize { /* basic responsive img */
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* IE8 */
+}
   @media (max-width:629px) {
    img#optionalstuff {
      display: none;
@@ -85,11 +90,11 @@
 
        <h1>Photos</h1>
 
-  <img src="1.jpeg" alt="Girl in a jacket" style="width:18%;height:400px;">
-	   <img src="2.jpeg" alt="Girl in a jacket" style="width:18%;height:400px;">
-		  <img src="3.jpeg" alt="Girl in a jacket" style="width:18%;height:400px;">
-			  <img src="4.jpeg" alt="Girl in a jacket" style="width:18%;height:400px;">
-				  <img src="5.jpeg" alt="Girl in a jacket" style="width:18%;height:400px;">
+  <img class="fixed-ratio-resize" src="1.jpeg" alt="Girl in a jacket" ">
+	   <img class="fixed-ratio-resize" src="2.jpeg" alt="Girl in a jacket" ">
+		  <img class="fixed-ratio-resize" src="3.jpeg" alt="Girl in a jacket" ">
+			  <img class="fixed-ratio-resize" src="4.jpeg" alt="Girl in a jacket" ">
+				  <img class="fixed-ratio-resize" src="5.jpeg" alt="Girl in a jacket" ">
 
       </div>
 
