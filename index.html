@@ -14,8 +14,39 @@
 		 function showDiv() {
    document.getElementById('welcomeDiv').style.display = "block";
 }
+		 
+    function Divs() {
+        var divs= $('#parent div'),
+            now = divs.filter(':visible'),
+            next = now.next().length ? now.next() : divs.first(),
+            speed = 1000;
+    
+        now.fadeOut(speed);
+        next.fadeIn(speed);
+    }
+    
+    $(function () {
+        setInterval(Divs, 1400);
+    });
+
+
 	 </script>
    <style>
+	   #parent div {
+    display:none;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#parent div:first-child {
+    display:block;
+}
+
+
+#parent > div{
+    width:400px;
+    height:250px;
+}
 	 .float-container {
    
     padding: 20px;
@@ -126,23 +157,26 @@ img {
  <div id="section2" class="container-fluid">
 
        <h1>Photos</h1>
-<div class="float-container">
-<div class="box">
-  <img class="fixed-ratio-resize" src="1.jpeg" alt="Girl in a jacket" ">
+	 <div id="parent">
+
+        <div id="box1" class="box">Div #1
+		   <img class="fixed-ratio-resize" src="1.jpeg" alt="Girl in a jacket" ">
+		 </div>
+	 <div id="box5" class="box">Div #1
+		   <img class="fixed-ratio-resize" src="2.jpeg" alt="Girl in a jacket" ">
+		 </div>
+	 <div id="box5" class="box">Div #1
+		   <img class="fixed-ratio-resize" src="3.jpeg" alt="Girl in a jacket" ">
+		 </div>
+	 <div id="box5" class="box">Div #1
+		   <img class="fixed-ratio-resize" src="4.jpeg" alt="Girl in a jacket" ">
+		 </div>
+	 <div id="box5" class="box">Div #1
+		   <img class="fixed-ratio-resize" src="5.jpeg" alt="Girl in a jacket" ">
+		 </div>	 
+     
 </div>
-								       <div class="box">
-  <img class="fixed-ratio-resize" src="2.jpeg" alt="Girl in a jacket" ">
-</div>
-	 <div class="box">
-  <img class="fixed-ratio-resize" src="3.jpeg" alt="Girl in a jacket" ">
-</div>
-								       <div class="box">
-  <img class="fixed-ratio-resize" src="4.jpeg" alt="Girl in a jacket" ">
-</div>
-	 <div class="box">
-  <img class="fixed-ratio-resize" src="5.jpeg" alt="Girl in a jacket" ">
-</div>
-								       </div>
+
 								       
 								       <div id="welcomeDiv"  style="display:none;" class="answer_list" >
 				<table>
